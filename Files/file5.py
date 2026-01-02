@@ -1,0 +1,7 @@
+f = open("demo1.txt", "r")
+g = open("demo2.txt", "w+")
+g.write(f.read())
+g.seek(0)
+print(g.read())
+g.close()
+f.close()
